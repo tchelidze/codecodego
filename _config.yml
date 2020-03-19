@@ -1,10 +1,8 @@
-title: Your awesome title
-author: GitHub User1
-email: your-email@domain.com
+title: Software Development Blog
+author: Bitchiko Tchelidze
+# email: example@domain.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Software Development blog
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -12,29 +10,18 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Adam Denisov
-  tagline: Developer. Designer
+  name: Bitchiko Tchelidze
+  tagline: Developer 
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
   # generate social links in footer
   social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
+    twitter: bubachelidze1
+    github: tchelidze
+    linkedIn: in/bitchiko-tchelidze-56a01ab4
     rss: rss
-    # dribbble: jekyll
-    # facebook: jekyll
-    # flickr:   jekyll
-    # instagram: jekyll
-    # linkedin: jekyll
-    # pinterest: jekyll
-    # youtube: jekyll
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
-    # telegram: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
+    disqus_shortname: bitchiko
 
     # Mastodon instances
     # mastodon:
