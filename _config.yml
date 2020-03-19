@@ -5,8 +5,6 @@ description: > # this means to ignore newlines until "show_exerpts:"
   Software Development blog
 show_excerpts: true # set to true to show excerpts on the homepage
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
   sass_dir: _sass
 plainwhite:
@@ -22,13 +20,6 @@ plainwhite:
     github: tchelidze
     linkedIn: in/bitchiko-tchelidze-56a01ab4
     rss: rss
-
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
