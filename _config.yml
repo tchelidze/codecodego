@@ -14,6 +14,7 @@ plainwhite:
   tagline: Developer 
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
+  disqus_shortname: codecodego-com
 
   # generate social links in footer
   social_links:
@@ -21,7 +22,6 @@ plainwhite:
     github: tchelidze
     linkedIn: in/bitchiko-tchelidze-56a01ab4
     rss: rss
-    disqus_shortname: codecodego-com
 
     # Mastodon instances
     # mastodon:
