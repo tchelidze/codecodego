@@ -7,12 +7,14 @@ show_excerpts: true # set to true to show excerpts on the homepage
 
 sass:
   sass_dir: _sass
+
 plainwhite:
   name: Bitchiko Tchelidze
-  tagline: Developer 
+  tagline: Back-End .NET Software Developer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   disqus_shortname: codecodego-com
+  analytics_id: UA-162149645-1
 
   # generate social links in footer
   social_links:
@@ -20,6 +22,11 @@ plainwhite:
     github: tchelidze
     linkedIn: in/bitchiko-tchelidze-56a01ab4
     rss: rss
+  navigation:
+    - title: Posts
+      url: "/"
+    - title: About Me
+      url: "/about-me"
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
