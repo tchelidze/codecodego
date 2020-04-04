@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "C# String interning"
-date:   2019-03-23 21:03:36 +0530
+date:   2019-04-04 21:03:36 +0530
 categories: .NET String C# MemoryOptimization
 excerpt: In this artcile we're going to talk about string interning and how it can be used to improve a performance of our application
 ---
