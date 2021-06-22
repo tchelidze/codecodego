@@ -7,9 +7,9 @@ categories: Microservices Outbox
 
 [Transactional outbox](https://microservices.io/patterns/data/transactional-outbox.html) is a well known pattern in microservices, which helps us to ensure that both database write operation and publishing messages to a message broker occur atomically, that is, both or none.
 
-If it's a first time you heard about the pattern, please google around. I'll do a brief overview of the problem and solution. In this article i'll also assume that you know about [Idempotent Consumer](https://microservices.io/patterns/communication-style/idempotent-consumer.html) Pattern
+If it's a first time you heard about the pattern, please google around. In this article i'll also assume that you know about [Idempotent Consumer](https://microservices.io/patterns/communication-style/idempotent-consumer.html) Pattern
 
-As you can see, doing outbox is a lot of work for just to send a message, doesn't it ? you need to store messages in database, then you need a separate process that reads and dispatches those message.
+As you can see, doing outbox is a lot of work for just to send a message, isn't it ? you need to store messages in database, then you need a separate process that reads and dispatches those message.
 
 We can achieve the same thing with less effort, or can we ?
 
