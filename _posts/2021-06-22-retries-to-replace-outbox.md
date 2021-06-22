@@ -49,7 +49,7 @@ UserEmailUpdated : {
 4. Application crashed and `UserEmailUpdated` can't be delieverd to message broker.
 5. `UpdateUserEmail` will be retried, with idempotency mechanism in place, you know that message is already processed, so, you'll skip updating an user and only re-dispatch `UserEmailUpdated` event 
 
-In Scenario 1, we can "restore" `UserEmailUpdated` event during the retry, because this event contains only with `Email` and `UserId` attribute and we can simply copy those values from `UpdateUserEmail` command.
+In Scenario 1, we can "restore" `UserEmailUpdated` event during the retry, because this event contains only `Email` and `UserId` attributes which can simply be copied from `UpdateUserEmail` command.
 
 Though, make no mistake, there are scenarios when you can not simply restore an event.
 
@@ -59,10 +59,10 @@ Say you have the following business logic : If the user has `gmail` address and 
 
 Lets assume that User's current balance is `123`
 
-1. `UpdateUserEmail` message is received, with `Email` equal to `usr@gmail.com`. User's balance became 223 and change stored in a database.
+1. `UpdateUserEmail` message is received, with `Email` equal to `usr@gmail.com`. User's balance became 223 and database transaction commited.
 2. The application crashed.
 3. Before the `UpdateUserEmail` is retried, the second message `UpdateUserEmail` is received with `Email` equal to `usr@yahoo.com`
-4. Processed second `UpdateUserEmail`, updated user's email and published `UserEmailUpdated` event.
+4. Second `UpdateUserEmail` is processed, User Updated, Transaction commited and `UserEmailUpdated` event published.
 5. Now first `UpdateUserEmail` command is retried, the message is already processed hence no need to update an user, although events need to be re-dispatched. Problem is that, there is no way we can restore `UnitDebittedToUser` event. User's balance is now `223`, hence logic like `If balance == 123 and emailDomain == 'gmail'` will evaluate negative.
 
 Conlusion
