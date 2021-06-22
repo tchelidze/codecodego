@@ -9,7 +9,7 @@ categories: Microservices Outbox
 
 If it's a first time you heard about the pattern, please google around. In this article i'll also assume that you know about [Idempotent Consumer](https://microservices.io/patterns/communication-style/idempotent-consumer.html) Pattern
 
-As you know, doing outbox is a lot of work for just to send a message, isn't it ? you need to store messages in database, then you need a separate process that reads and dispatches those message.
+Doing outbox is a lot of work in order to just send a message. Message(s) need to be stored in database, then a separate process should read and dispatches to message broker.
 
 We can achieve the same thing with less effort, or can we ?
 
